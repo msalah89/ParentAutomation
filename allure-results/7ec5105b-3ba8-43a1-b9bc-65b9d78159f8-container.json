@@ -1,1 +1,12 @@
-{"uuid":"7ec5105b-3ba8-43a1-b9bc-65b9d78159f8","name":"ParentAutomation","children":["3274f586-8517-491c-936b-2a1abb379484"],"befores":[],"afters":[],"links":[],"start":1546694476120,"stop":1546694495549}
+{
+  "uuid": "7ec5105b-3ba8-43a1-b9bc-65b9d78159f8",
+  "name": "ParentAutomation",
+  "children": [
+    "3274f586-8517-491c-936b-2a1abb379484"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1546694476120,
+  "stop": 1546694495549
+}

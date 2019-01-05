@@ -1,7 +1,6 @@
 package poms;
 
 import com.shaft.element.ElementActions;
-import com.shaft.validation.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -19,10 +18,9 @@ public class InstituteDashboard extends PageBase {
     }
 
 
-
     public void GotoCalendar() {
 
-      ElementActions.click(driver,CalendarTabLink);
+        ElementActions.click(driver, CalendarTabLink);
 
     }
 }

@@ -4,11 +4,6 @@ import com.shaft.element.ElementActions;
 import com.shaft.validation.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-
-import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class NGSelect {
     WebDriver driver;
@@ -36,11 +31,13 @@ public class NGSelect {
 
 
     }
+
     By selectedOption(String selectValue) {
         return By.xpath("//div[contains(@class, 'ng-value-wrapper') and contains(., '" + selectValue + "')]");
 
 
     }
+
     public void selectValueFromDropDownList(String Value) {
 
 
@@ -53,11 +50,9 @@ public class NGSelect {
 
         ElementActions.click(driver, selectOption);
 
-         Assertions.assertElementExists(driver,selectedOption,true);
+        Assertions.assertElementExists(driver, selectedOption, true);
 
     }
-
-
 
 
 }

@@ -31,18 +31,18 @@ public class TimePicker {
 
     public void SelectTime(String timeString) {
 
-        int hour =Integer.parseInt( timeString.split(" ")[0].split(":")[0].trim());
-        int minute =Integer.parseInt( timeString.split(" ")[0].split(":")[1].trim());
-        String ampm =timeString.split(" ")[1].trim();
+        int hour = Integer.parseInt(timeString.split(" ")[0].split(":")[0].trim());
+        int minute = Integer.parseInt(timeString.split(" ")[0].split(":")[1].trim());
+        String ampm = timeString.split(" ")[1].trim();
 
         ElementActions.click(driver, timepickerBtn);
         ElementActions.type(driver, hourTxtBox, String.valueOf(hour));
         ElementActions.type(driver, minuteTxtBox, String.valueOf(minute));
-    if (!ElementActions.getText(driver, ampmBtn).toLowerCase().equals(ampm.toLowerCase())) {
+        if (!ElementActions.getText(driver, ampmBtn).toLowerCase().equals(ampm.toLowerCase())) {
             ElementActions.click(driver, ampmBtn);
         }
         ElementActions.click(driver, timepickerBtn);
-    Assertions.assertElementAttribute(driver, timepickerBtn, "text", timeString, 1, true);
+        Assertions.assertElementAttribute(driver, timepickerBtn, "text", timeString, 1, true);
     }
 
 

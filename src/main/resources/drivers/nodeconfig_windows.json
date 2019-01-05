@@ -1,33 +1,32 @@
 {
-  "capabilities":
-  [
+  "capabilities": [
     {
       "browserName": "firefox",
-	  "platform": "WINDOWS",
+      "platform": "WINDOWS",
       "maxInstances": 4,
       "seleniumProtocol": "WebDriver",
-	  "webdriver.gecko.driver": "geckodriver.exe"
+      "webdriver.gecko.driver": "geckodriver.exe"
     },
     {
       "browserName": "chrome",
-	  "platform": "WINDOWS",
+      "platform": "WINDOWS",
       "maxInstances": 4,
       "seleniumProtocol": "WebDriver",
-	  "webdriver.chrome.driver": "chromedriver.exe"
+      "webdriver.chrome.driver": "chromedriver.exe"
     },
     {
       "browserName": "internet explorer",
-	  "platform": "WINDOWS",
+      "platform": "WINDOWS",
       "maxInstances": 1,
       "seleniumProtocol": "WebDriver",
-	  "webdriver.ie.driver": "IEDriverServer.exe"
+      "webdriver.ie.driver": "IEDriverServer.exe"
     },
     {
       "browserName": "MicrosoftEdge",
-	  "platform": "WINDOWS",
+      "platform": "WINDOWS",
       "maxInstances": 1,
       "seleniumProtocol": "WebDriver",
-	  "webdriver.edge.driver": "MicrosoftWebDriver.exe"
+      "webdriver.edge.driver": "MicrosoftWebDriver.exe"
     }
   ],
   "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
@@ -44,7 +43,7 @@
   "unregisterIfStillDownAfter": 60000,
   "downPollingLimit": 2,
   "debug": false,
-  "servlets" : [],
+  "servlets": [],
   "withoutServlets": [],
   "custom": {}
 }

@@ -18,7 +18,7 @@ public class CreateEvent extends TestBase {
     InstituteDashboard instituteDashboardObject;
     InstituteCalendar instituteCalendarObject;
     CreateEventPage createEventPageObject;
-    String eventName="test_event_9e85bfe5-1559-488f-adcd-f60a098e8120";
+    String eventName = "test_event_9e85bfe5-1559-488f-adcd-f60a098e8120";
 
     @BeforeSuite
 
@@ -62,8 +62,8 @@ public class CreateEvent extends TestBase {
     @Then("^I should find the event in calendar with date \"([^\"]*)\"$")
     public void i_should_find_the_event_in_calendar_with_date(String arg1) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        int day =Integer.parseInt( arg1.split("/")[0]);
-        int month =Integer.parseInt( arg1.split("/")[1]);
+        int day = Integer.parseInt(arg1.split("/")[0]);
+        int month = Integer.parseInt(arg1.split("/")[1]);
 
         instituteCalendarObject = new InstituteCalendar(driver);
         instituteCalendarObject.scrollTillDateReached(day, month);
@@ -73,7 +73,7 @@ public class CreateEvent extends TestBase {
     @Then("^event details should have \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" ,\"([^\"]*)\" and \"([^\"]*)\"$")
     public void event_details_should_have_and(String date, String From, String To, String ReplyDate, String recipents) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-EventPage eventPage = new EventPage(driver, eventName,date,From,To,ReplyDate,recipents.split(","));
+        EventPage eventPage = new EventPage(driver, eventName, date, From, To, ReplyDate, recipents.split(","));
 
     }
 

@@ -1,19 +1,18 @@
 {
-  "capabilities":
-  [
+  "capabilities": [
     {
       "browserName": "firefox",
-	  "platform": "LINUX",
+      "platform": "LINUX",
       "maxInstances": 4,
       "seleniumProtocol": "WebDriver",
-	  "webdriver.gecko.driver": "/linux-64/geckodriver"
+      "webdriver.gecko.driver": "/linux-64/geckodriver"
     },
     {
       "browserName": "chrome",
-	  "platform": "LINUX",
+      "platform": "LINUX",
       "maxInstances": 4,
       "seleniumProtocol": "WebDriver",
-	  "webdriver.chrome.driver": "/linux-64/chromedriver"
+      "webdriver.chrome.driver": "/linux-64/chromedriver"
     }
   ],
   "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
@@ -30,7 +29,7 @@
   "unregisterIfStillDownAfter": 60000,
   "downPollingLimit": 2,
   "debug": false,
-  "servlets" : [],
+  "servlets": [],
   "withoutServlets": [],
   "custom": {}
 }
