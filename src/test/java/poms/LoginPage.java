@@ -15,11 +15,8 @@ public class LoginPage extends PageBase {
         super(driver);
     }
 
-    ///  <summary>
-    ///      Login in Souq.com using email and password
-    ///  </summary>
-    ///  <param name="email"> Souq.com user email address</param>
-    ///  <param name="password">Souq.com user password</param>
+
+
     public void Login(String email, String password) {
 
         ElementActions.type(driver, EmailTextBox, email);
@@ -29,10 +26,5 @@ public class LoginPage extends PageBase {
     }
 
 
-    public void logout() {
-
-        driver.navigate().to("https://egypt.souq.com/eg-en/logout.php");
-
-    }
 
 }
