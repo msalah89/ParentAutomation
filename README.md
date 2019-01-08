@@ -11,4 +11,7 @@
 - Allure Reporting
 - Cucumber [BDD]
 - Apache POI
+ -Angular 6
+ -Page Object Model
+ -Component Object Model
  
